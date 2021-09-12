@@ -5,8 +5,9 @@ frameworkVersion: '2'
 provider:
   name: aws
   runtime: nodejs12.x
+  region: eu-central-1
   # setup profile for AWS CLI.
-  # profile: node-aws
+  # profile: admin
 
 plugins:
   - serverless-finch
@@ -17,7 +18,7 @@ plugins:
 
 custom:
   client:
-    bucketName: node-in-aws-web-bucket
+    bucketName: my-pony-shop-app
     distributionFolder: build
   s3BucketName: ${self:custom.client.bucketName}
 
