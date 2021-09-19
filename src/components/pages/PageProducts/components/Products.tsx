@@ -37,22 +37,22 @@ export default function Products() {
   useEffect(() => {
     console.log('path', API_PATHS.product)
     axios.get(`${API_PATHS.product}`)
-      .then(res => !!(console.log('products,', res) as any) || setProducts(res.data.pony));
+      .then(res => !!(console.log('products,', res) as any) || setProducts(res.data.ponyList));
   }, [])
 
   return (
     <Grid container spacing={4}>
       {products.map((product: Product) => (
-        <Grid item key={product.cutieId} xs={12} sm={6} md={4}>
+        <Grid item key={product.id} xs={12} sm={6} md={4}>
           <Card className={classes.card}>
             <CardMedia
               className={classes.cardMedia}
-              image={product.art}
+              image={product.imgUrl}
               title="Image title"
             />
             <CardContent className={classes.cardContent}>
               <Typography gutterBottom variant="h5" component="h2">
-                {product.name} the pony
+                {product.pony_name} the pony
               </Typography>
               <Typography>
                 {formatAsPrice(product.price)}
