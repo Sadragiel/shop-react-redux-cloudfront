@@ -1,3 +1,6 @@
+## The frontend
+The frontend is available on https://d2bu9yugx3jkrw.cloudfront.net/ if I still didn't remove it =)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
