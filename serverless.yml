@@ -20,8 +20,8 @@ custom:
   client:
     bucketName: my-pony-shop-app
     distributionFolder: build
-  s3BucketName: ${self:custom.client.bucketName}
 
+  s3BucketName: ${self:custom.client.bucketName}
   ## Serverless-single-page-app-plugin configuration:
   s3LocalPath: ${self:custom.client.distributionFolder}/
 

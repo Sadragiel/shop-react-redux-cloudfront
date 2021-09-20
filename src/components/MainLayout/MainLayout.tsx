@@ -10,7 +10,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
-        Danylo Hulko and ponies
+        Danylo Hulko and his little ponies
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
